@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body> 
+    <div class="wrapper" id="wrapper" >     
+    </div> 
+
+    <template id="template1" onclick="toTemplate2()">
+        <a href="#template2">
+        <article class="article1" id="article1" onclick="toTemplate2()">
+            <div> 
+                 <h5></h5><img class="img1" id="img1" src="#" alt="Info Article.">
+            </div>
+            <div>
+                 <h3 id="title1"></h3>
+                 <p id="p1"></p>
+            </div>
+        </article>
+    </a>
+    <a href="#template2">
+        <article class="article1" onclick="toTemplate2()">
+            <div> 
+                <h5></h5><img class="img1" id="img2" src="#" alt="Info Article.">
+            </div>
+            <div>
+                <h3 id="title2"></h3>
+                <p id="p2"> </p>
+            </div>
+        </article>
+    </a>
+    </template>
+        
+    <template id="template2">
+        <article class="article2" id="article2"> 
+            <img class="img2" id="img3" src="#" alt="Info Article.">
+            <h3 id="title3" ></h3>
+            <p id="p3"></p>
+                <a href="#template1" onclick="toTemplate1();">Link to Template1</a>
+        </article>
+    </template> 
+
+<script src="data.json"></script> 
+<script src="myscript.js"></script>  
+</body>
+
+</html>
